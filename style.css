@@ -1,0 +1,88 @@
+/* Ваші існуючі стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Світлий фон */
+}
+
+header {
+    background-color: #4CAF50; /* Основний колір заголовка */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Темний фон для навігації */
+}
+
+.nav-item {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #555; /* Зміна кольору при наведенні */
+}
+
+/* Нові стилі для галереї зображень */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Центруємо галерею */
+    margin: 20px;
+    flex-wrap: wrap; /* Переносимо зображення на новий ряд, якщо не вміщаються */
+}
+
+.image-container {
+    margin: 10px; /* Відстань між зображеннями */
+    overflow: hidden; /* Приховуємо все, що виходить за межі контейнера */
+    border-radius: 10px; /* Закруглені кути контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для глибини */
+}
+
+.image-container img {
+    width: 250px;
+    height: 200px;
+    transition: transform 0.3s, filter 0.3s; /* Анімація при наведенні */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+    filter: brightness(1.1); /* Підсвічування при наведенні */
+}
+
+/* Стилі для основного контенту */
+.content {
+    display: flex;
+    justify-content: space-around; /* Вирівнюємо секції вмісту */
+    flex-wrap: wrap; /* Переносимо секції на новий ряд, якщо не вміщуються */
+    margin: 20px;
+}
+
+.card {
+    background-color: white; /* Білий фон для карток */
+    border: 1px solid #ddd; /* Сірий обвод */
+    border-radius: 10px; /* Закруглені кути карток */
+    padding: 20px; /* Внутрішній відступ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+    width: 30%; /* Ширина карток */
+    margin: 10px; /* Відстань між картками */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анімація при наведенні */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Підйом картки при наведенні */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Підсилення тіні при наведенні */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Основний колір для футера */
+    color: white;
+}
